@@ -1,0 +1,59 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <h1>
+        Movie Database Thing
+      </h1>
+      <body>
+        <div class="movIeContainer">
+        <h2>Enter Movie Title</h2>
+        <input type="text" class="form-control" [(ngModel)]="searchTitle" (keyup.enter)="submit()" id="title" style="border: 1px solid black;"
+          required name="title">
+        <button (click)="submit()">Submit</button>
+        <h4>
+          Title
+        </h4>
+        <li>
+          {{this.movieValue.title}}
+        </li>
+        <h4>
+          Rated
+        </h4>
+        <li>
+          {{this.movieValue.Rated}}
+        </li>
+        <h4>
+          Year
+        </h4>
+        <li>
+          {{this.movieValue.Year}}
+        </li>
+        <h4>
+          Director
+        </h4>
+        <li>
+          {{this.movieValue.Director}}
+        </li>
+        <h4>
+          Actors
+        </h4>
+        <li>
+          {{this.movieValue.Actors}}}
+        </li>
+        <h4>
+          Genre
+        </h4>
+        <li>
+          {{this.movieValue.Genre}}
+        </li>
+        <h4>
+          Plot
+        </h4>
+        <li>
+          {{this.movieValue.Plot}}}
+        </li>
+      </div>
+      </body>
+    </div>
+    
