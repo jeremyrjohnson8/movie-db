@@ -11,7 +11,7 @@ export class LandingComponent implements OnInit {
   private uid: string; 
   constructor(private _router: Router, private ar: ActivatedRoute) { 
    ar.params.subscribe(params => {
-    this.uid = params['id'];
+      this.uid = params['id'];
    })
   }
 

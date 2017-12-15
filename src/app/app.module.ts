@@ -1,3 +1,4 @@
+import { MovieService } from './../services/movieservice/movie.service';
 import { HttpModule } from '@angular/http';
 import { AppRoutes } from './../routes';
 import { LoginComponent } from './../pages/login/login.component';
@@ -35,6 +36,7 @@ import { MyMoviesComponent } from './../pages/my-movies/my-movies.component';
   ],
   providers: [
     OmdbService,
+    MovieService    
   ],
   bootstrap: [AppComponent]
 })
